@@ -1,0 +1,16 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.tkddnjs-dlqslek/shift-maker",
+  "description": "Labor-law-aware shift scheduling for Korean workplaces. Conversational store/employee setup, OR-Tools CP-SAT schedule generation (52h week, minor-worker protection), availability links, calendar publishing.",
+  "version": "0.1.0",
+  "repository": {
+    "url": "https://github.com/tkddnjs-dlqslek/shift-maker-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://shift-maker.playmcp-endpoint.kakaocloud.io/mcp"
+    }
+  ]
+}

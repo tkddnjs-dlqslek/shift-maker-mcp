@@ -1,0 +1,15 @@
+# Smithery configuration — https://smithery.ai/docs/build/project-config/smithery.yaml
+#
+# shift-maker exposes MCP over Streamable HTTP at the /mcp endpoint and reads
+# the port from the PORT env var (see src/index.ts). The repo ships a Dockerfile,
+# so Smithery can build and host the container directly.
+#
+# NOTE: The primary live endpoint is already hosted on Kakao Cloud at
+#   https://shift-maker.playmcp-endpoint.kakaocloud.io/mcp
+# To point Smithery at that existing deployment instead of building the
+# container, use the CLI:  smithery mcp publish <url> -n tkddnjs-dlqslek/shift-maker
+# (see docs/SUBMIT.md). This file covers the "Smithery builds & hosts" path.
+
+runtime: "container"
+startCommand:
+  type: http
